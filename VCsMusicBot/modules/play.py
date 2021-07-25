@@ -532,10 +532,12 @@ async def play(_, message: Message):
         keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("📖 Playlist", callback_data="playlist"),
-                    InlineKeyboardButton("Menu ⏯ ", callback_data="menu"),
+                    InlineKeyboardButton(text="📖 Playlist", callback_data="playlist"),
+                    InlineKeyboardButton(text="Menu ⏯ ", callback_data="menu"),
+                    InlineKeyboardButton(text="Managed By👑 ", url=https://t.me/sokapgblg"),
                 ],
                 [InlineKeyboardButton(text="❌ Close", callback_data="cls")],
+                
             ]
         )
         file_name = get_file_name(audio)
@@ -595,6 +597,7 @@ async def play(_, message: Message):
                 [
                     InlineKeyboardButton(text="🎬 YouTube", url=f"{url}"),
                     InlineKeyboardButton(text="Download 📥", url=f"{dlurl}"),
+                    InlineKeyboardButton(text="Managed by 👑", url=https://t.me/sokapgblg"),
                 ],
                 [InlineKeyboardButton(text="❌ Close", callback_data="cls")],
             ]
@@ -688,6 +691,7 @@ async def play(_, message: Message):
                     [
                         InlineKeyboardButton(text="🎬 YouTube", url=f"{url}"),
                         InlineKeyboardButton(text="Download 📥", url=f"{dlurl}"),
+                        InlineKeyboardButton(text="Managed by 👑", url=https://t.me/sokapgblg"),
                     ],
                     [InlineKeyboardButton(text="❌ Close", callback_data="cls")],
                 ]
@@ -846,6 +850,7 @@ async def ytplay(_, message: Message):
             [
                 InlineKeyboardButton(text="🎬 YouTube", url=f"{url}"),
                 InlineKeyboardButton(text="Download 📥", url=f"{dlurl}"),
+                InlineKeyboardButton(text="Managed by 👑", url=https://t.me/sokapgblg"),
             ],
             [InlineKeyboardButton(text="❌ Close", callback_data="cls")],
         ]
