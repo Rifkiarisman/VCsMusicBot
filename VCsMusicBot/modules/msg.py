@@ -7,9 +7,9 @@ class Messages():
 f"""
 **Hello, Welcome to {PROJECT_NAME}
 
-⭕ I can play music in your group's voice chat as well as channel voice chats.
+🔥 I can play music in your group's voice chat as well as channel voice chats.
 
-⭕ Assistant: @{ASSISTANT_NAME}\n\nClick Next ➡️ for instructions.**
+🔥 Assistant: @{ASSISTANT_NAME}\n\nClick Next ➡️ for instructions.**
 """,
 
 f"""
@@ -51,7 +51,7 @@ f"""
 f"""
 **=>> Channel Music Play 👨‍🎤**
 
-**⭕ For linked group admins only:**
+**🔥 For linked group admins only:**
 
 - /cplay <song name>: Play song you requested.
 - /cdplay <song name>: Play song you requested via deezer.
@@ -67,7 +67,7 @@ f"""
 
 **Channel is also can be used instead of c** ( /cplay = /channelplay )
 
-**⭕ If you donlt like to play in linked group:**
+**🔥 If you donlt like to play in linked group:**
 
 1) Get your channel ID.
 2) Create a group with tittle: Channel Music: your_channel_id
