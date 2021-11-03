@@ -15,15 +15,6 @@ def _start(client, message):
                 [
                     InlineKeyboardButton(
                         "➕ Add me to your Group ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
-                [
-                    InlineKeyboardButton(
-                        "🔰 Group Chat", url=f"https://t.me/{SUPPORT_GROUP}"), 
-                    InlineKeyboardButton(
-                        "Channel 📢", url=f"https://t.me/{UPDATES_CHANNEL}")
-                ],[
-                    InlineKeyboardButton(
-                        "Managed by 👑", url=f"https://t.me/sokapgblg")
-                ]
             ]
         ),
         reply_to_message_id=message.message_id
@@ -36,14 +27,6 @@ async def gstart(_, message: Message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton(
-                        "🔰 Group Chat", url=f"https://t.me/{SUPPORT_GROUP}"
-                    )
-                ],    
-                [    
-                    InlineKeyboardButton(
-                        "🔎 Search YT", switch_inline_query_current_chat=""
-                    ),
                     InlineKeyboardButton(
                         "Close ❌", callback_data="close"
                     )
@@ -86,8 +69,6 @@ def map(pos):
         url = f"https://t.me/{SUPPORT_GROUP}"
         button = [
             [InlineKeyboardButton("➕ Add me to your Group ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
-            [InlineKeyboardButton(text = '🔰 Group Chat', url=f"https://t.me/{SUPPORT_GROUP}"),
-            [InlineKeyboardButton(text = 'Channel Update 📢', url=f"https://t.me/{UPDATES_CHANNEL}")],
             [InlineKeyboardButton(text = '◀️ Back', callback_data = f"help+{pos-1}")]
         ]
     else:
@@ -99,7 +80,7 @@ def map(pos):
         ]
     return button
 
-@Client.on_message(filters.command(["help","help@VCsMusicBot"]) & ~filters.private & ~filters.channel)
+@Client.on_message(filters.command(["help"]) & ~filters.private & ~filters.channel)
 async def ghelp(_, message: Message):
     await message.reply_text(
         f"""**Hello there! I can play music in the voice chats of telegram groups & channels.**""",
