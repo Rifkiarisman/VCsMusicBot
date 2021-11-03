@@ -31,9 +31,7 @@ f"""
 
 - /play <song name>: Select the Given Below Keyboard.
 - /play <yt url>: Play the given YouTube URL.
-- /ytplay: Directly play song via YouTube Music.
-- /dplay: Play song via deezer.
-- /splay: Play song via jio saavn.
+- /ytp: Directly play song via YouTube Music.
 
 **=>> Playback ⏯**
 
@@ -87,8 +85,6 @@ f"""
 **=>> Song/Vid Download 📥**
 - /video [song mame]: Download video song from youtube
 - /song [song name]: Download audio song from youtube
-- /saavn [song name]: Download song from saavn
-- /deezer [song name]: Download song from deezer
 
 **=>> Search Tools 🔍**
 - /search [song name]: Search youtube for songs
